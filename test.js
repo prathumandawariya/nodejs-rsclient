@@ -16,22 +16,3 @@ client.get().then(
 
 
 
-
-const axiosCrud = require('./lib/axios');
-
-// Set the base URL dynamically
-axiosCrud.use('http://localhost:3000');
-
-// Make a GET request
-axiosCrud.get('/employees')
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-
- 
-
-
-
